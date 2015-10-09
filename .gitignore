@@ -1,0 +1,8 @@
+gitconfig_local
+
+vim/_backup/*
+vim/_swap/*
+vim/_undo/*
+
+# I have no idea what the following history file is for
+vim/.netrwhist

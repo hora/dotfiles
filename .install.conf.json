@@ -1,0 +1,15 @@
+[
+    {
+        "clean": ["~"]
+    },
+    {
+        "link": {
+            "~/.dotfiles": "",
+            "~/.gitconfig": "gitconfig",
+            "~/.gitconfig_local": "gitconfig_local",
+            "~/.gitignore_global": "gitignore_global",
+            "~/.vim": "vim/",
+            "~/.vimrc": "vimrc"
+        }
+    }
+]
