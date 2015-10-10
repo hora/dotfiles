@@ -1,15 +1,13 @@
 # General
+# -------
 set fish_greeting
 
 set -x EDITOR vim
 set -X LC_ALL en_CA.UTF-8
 set -x LANG en_CA.UTF-8
 
-# Navigation
-function ..   ; cd .. ; end
-function ...  ; cd ../.. ; end
-function .... ; cd ../../.. ; end
-function l    ; ls $argv ; end
+# Functions
+# ---------
 
 # Git
 function g   ; git $argv ; end
@@ -21,7 +19,17 @@ function gp  ; git push $argv ; end
 function gst ; git status $argv ; end
 function gup ; git pull --rebase $argv ; end
 
+# Navigation
+function ..   ; cd .. ; end
+function ...  ; cd ../.. ; end
+function .... ; cd ../../.. ; end
+function l    ; ls $argv ; end
+
+# Utilities
+function c ; clear ; end
+
 # Completions
+# -----------
 function make_completion --argument-names alias command
     echo "
     function __alias_completion_$alias
