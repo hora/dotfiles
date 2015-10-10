@@ -4,6 +4,7 @@
     },
     {
         "link": {
+            "~/.config/fish/config.fish": "fish/config.fish",
             "~/.dotfiles": "",
             "~/.gitconfig": "gitconfig",
             "~/.gitconfig_local": "gitconfig_local",
