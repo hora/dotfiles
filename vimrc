@@ -10,12 +10,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'kien/ctrlp.vim'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Raimondi/delimitMate'
+Plugin 'jlanzarotta/bufexplorer'            " easy buffering
+Plugin 'altercation/vim-colors-solarized'   " solazired colour scheme
+Plugin 'kien/ctrlp.vim'                     " fuzzy file finder
+Plugin 'Raimondi/delimitMate'               " insert mode auto-completion for quotes, brackets, etc
+Plugin 'scrooloose/nerdcommenter'           " easy commenting
+Plugin 'scrooloose/nerdtree'                " directory browser
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'} " powerline status bar
+Plugin 'tpope/vim-surround'                 " easy surround manipulations
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
