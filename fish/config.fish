@@ -16,6 +16,7 @@ set -x LANG en_CA.UTF-8
 function g   ; git $argv ; end
 function ga  ; git add $argv ; end
 function gc  ; git commit $argv ; end
+function gco ; git checkout $argv ; end
 function gd  ; git diff $argv ; end
 function glg ; git log --stat $argv ; end
 function gp  ; git push $argv ; end
