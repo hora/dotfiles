@@ -4,10 +4,12 @@ set fish_greeting
 function fish_user_key_bindings
     fish_vi_key_bindings
 end
+rvm default
 
 set -x EDITOR vim
-set -X LC_ALL en_CA.UTF-8
+set -x LC_ALL en_CA.UTF-8
 set -x LANG en_CA.UTF-8
+set -x PATH /usr/local/bin $PATH
 
 # Functions
 # ---------
