@@ -11,40 +11,26 @@ set -x LC_ALL en_CA.UTF-8
 set -x LANG en_CA.UTF-8
 set -x PATH /usr/local/bin $PATH
 
-# Functions
-# ---------
+# Abbreviations
+# -------------
 
 # Git
-function g   ; git $argv ; end
-function ga  ; git add $argv ; end
-function gc  ; git commit $argv ; end
-function gco ; git checkout $argv ; end
-function gd  ; git diff $argv ; end
-function glg ; git log --stat $argv ; end
-function gp  ; git push $argv ; end
-function gst ; git status $argv ; end
-function gup ; git pull --rebase $argv ; end
+abbr -a g   git
+abbr -a ga  git add
+abbr -a gc  git commit
+abbr -a gco git checkout
+abbr -a gd  git diff
+abbr -a glg git log --stat
+abbr -a gp  git push
+abbr -a gst git status
+abbr -a gup git pull --rebase
 
 # Navigation
-function ..   ; cd .. ; end
-function ...  ; cd ../.. ; end
-function .... ; cd ../../.. ; end
-function l    ; ls $argv ; end
+abbr -a ..   cd ..
+abbr -a ...  cd ../..
+abbr -a .... cd ../../..
+abbr -a l    ls
 
 # Utilities
-function c ; clear ; end
+abbr -a c clear
 
-# Completions
-# -----------
-function make_completion --argument-names alias command
-    echo "
-    function __alias_completion_$alias
-        set -l cmd (commandline -o)
-        set -e cmd[1]
-        complete -C\"$command \$cmd\"
-    end
-    " | .
-    complete -c $alias -a "(__alias_completion_$alias)"
-end
-
-make_completion g 'git'
