@@ -18,6 +18,7 @@ Plugin 'scrooloose/nerdcommenter'           " easy commenting
 Plugin 'scrooloose/nerdtree'                " directory browser
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'} " powerline status bar
 Plugin 'tpope/vim-surround'                 " easy surround manipulations
+Plugin 'editorconfig/editorconfig-vim'      " editorconfig support
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
