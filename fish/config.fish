@@ -34,3 +34,6 @@ abbr -a l    ls
 # Utilities
 abbr -a c clear
 
+# Applications
+abbr -a ff open -a firefox
+
