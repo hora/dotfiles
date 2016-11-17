@@ -8,7 +8,7 @@
 ## Setup
 
 - clone repo
-- make `gitconfig_loca`l file with GitHub [user] name and email settings
+- make `gitconfig_local` file with GitHub [user] name and email settings
 - create `vim/_backup`, `vim/_swap`, `vim/_undo` directories
 - `./install`
 - run `:PluginInstall` in vim
