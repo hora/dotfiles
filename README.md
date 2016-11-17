@@ -1,8 +1,15 @@
-## Install:
+## Install
 
-- iTerm (with Solarized colours)
+- iTerm, with Solarized colours
 - homebrew
 - fish shell
 - Powerline fonts
-- dotbot
+
+## Setup
+
+- clone repo
+- make `gitconfig_loca`l file with GitHub [user] name and email settings
+- create `vim/_backup`, `vim/_swap`, `vim/_undo` directories
+- `./install`
+- run `:PluginInstall` in vim
 
