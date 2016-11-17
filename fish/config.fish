@@ -33,6 +33,7 @@ abbr -a l    ls
 
 # Utilities
 abbr -a c clear
+abbr -a nap pmset sleepnow
 
 # Applications
 abbr -a ff open -a firefox
