@@ -36,4 +36,5 @@ abbr -a c clear
 
 # Applications
 abbr -a ff open -a firefox
+abbr -a nv 'open -a "notational velocity"'
 
