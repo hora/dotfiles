@@ -36,6 +36,7 @@ abbr -a c clear
 abbr -a nap pmset sleepnow
 
 # Applications
+abbr -a o open -a
 abbr -a ff open -a firefox
 abbr -a nv 'open -a "notational velocity"'
 
