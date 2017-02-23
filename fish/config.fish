@@ -39,4 +39,6 @@ abbr -a nap pmset sleepnow
 abbr -a o open -a
 abbr -a ff open -a firefox
 abbr -a nv 'open -a "notational velocity"'
+abbr -a ia 'open -a "ia writer"'
+abbr -a chrome 'open -a "google chrome"'
 
