@@ -38,7 +38,16 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set number
-set nowrap " don't wrap lines
+
+"set nowrap " don't wrap lines
+" word wrap, but only insert line breaks when using Enter key
+set wrap
+set linebreak
+set nolist
+" prevent vim from automatically inserting line breaks in newly entered text
+set textwidth=0
+set wrapmargin=0
+
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set showmatch "show matching parens
 set ignorecase " ignore case when searching
@@ -83,6 +92,7 @@ set noshowmode " hide the default mode text
 
 " powerline settings for macvim
  if has("gui_running")
+    :set linebreak
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
         set guifont=Inconsolata\ for\ Powerline:h15
