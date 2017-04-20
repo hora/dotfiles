@@ -11,9 +11,6 @@
 function cdwd
     set root_dir (git rev-parse --show-toplevel)
     set dir "$root_dir/data"
-    set branch (git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
-    set repo (git remote show -n origin | grep "Fetch URL" | perl -ne 'print $1 if /com:(.+\/.+)(?=\.git)/')
-
 
     if test (count $argv) -eq 2
         set dir "$dir/Week $argv[1] Day $argv[2]"
