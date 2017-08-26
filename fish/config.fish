@@ -10,6 +10,7 @@ set -x EDITOR vim
 set -x LC_ALL en_CA.UTF-8
 set -x LANG en_CA.UTF-8
 set -x PATH /usr/local/bin $PATH
+set -x PATH /usr/local/sbin $PATH
 
 # Abbreviations
 # -------------
